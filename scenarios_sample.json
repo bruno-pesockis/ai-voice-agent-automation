@@ -1,0 +1,71 @@
+[
+ {
+  "id": "A1",
+  "title": "New patient, cleaning, confirms the caller-ID number",
+  "script": [
+   "Hi, I'd like to book a cleaning, I'm a new patient."
+  ],
+  "uid": "+18135550101",
+  "p": {
+   "callfrom": "Yes.",
+   "phone": "Yes, the number I'm calling from."
+  },
+  "expect": "8135550101"
+ },
+ {
+  "id": "A2",
+  "title": "Existing patient reschedules",
+  "script": [
+   "Hi, I have an appointment Thursday at 10 and I need to move it."
+  ],
+  "uid": "+18135550102",
+  "p": {
+   "new": "I've been coming there for years.",
+   "time": "Any afternoon next week.",
+   "callfrom": "Yes.",
+   "phone": "Yes, the number I'm calling from."
+  },
+  "expect": "8135550102"
+ },
+ {
+  "id": "B1",
+  "title": "Caller gives a different call-back number",
+  "script": [
+   "Hi, my tooth hurts, can someone call me back?"
+  ],
+  "uid": "+18135550103",
+  "p": {
+   "callfrom": "No, please use my cell.",
+   "phone": "It's 727 555 0144.",
+   "yes": "Yes."
+  },
+  "expect": "7275550144"
+ },
+ {
+  "id": "C1",
+  "title": "Caller refuses to leave a number",
+  "script": [
+   "What are your hours on Saturday?"
+  ],
+  "uid": "+18135550104",
+  "p": {
+   "other": "No, that's all, thanks.",
+   "bye": "No, that's all. Thanks."
+  },
+  "expect": null
+ },
+ {
+  "id": "ES1",
+  "title": "Spanish speaker, new patient",
+  "script": [
+   "Hola, quiero hacer una cita para una limpieza."
+  ],
+  "uid": "+18135550105",
+  "es": true,
+  "p": {
+   "callfrom": "Sí.",
+   "phone": "Sí, el número desde el que llamo."
+  },
+  "expect": "8135550105"
+ }
+]
