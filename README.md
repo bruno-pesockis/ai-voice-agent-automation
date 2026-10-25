@@ -1,7 +1,7 @@
-# after-hours-automation
+# AI Voice Agent & Sales Automation for Dental Clinics
 
 **AI phone assistant that answers US dental clinics' calls after hours, plus the sales automation behind it.**
-The agent (Voiceflow) takes the caller's name, number and need; Make and Google Apps Script log every call and lead into a Google Sheet, Gemini reads callers' notebook photos and drafts follow-up emails, and the owner gets reports through the Telegram Bot API.
+The Voiceflow agent takes the caller's name, number and need, and its `save_lead` tool sends the request to a Make webhook that writes it as a new row in the Google Sheet; Google Apps Script then tracks the calling team's work in that sheet, Gemini reads callers' notebook photos and drafts follow-up emails, and the owner gets reports through the Telegram Bot API.
 **Stack:** Voiceflow · Make · Google Apps Script · Gemini · Telegram Bot API · Looker Studio · Python (test harness).
 
 ## Live demo
