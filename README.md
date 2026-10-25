@@ -1,6 +1,26 @@
 # after-hours-automation
 
-AI phone assistant and sales automation for US dental clinics.
+**AI phone assistant that answers US dental clinics' calls after hours, plus the sales automation behind it.**
+The agent (Voiceflow) takes the caller's name, number and need; Make and Google Apps Script log every call and lead into a Google Sheet, Gemini reads callers' notebook photos and drafts follow-up emails, and the owner gets reports through the Telegram Bot API.
+**Stack:** Voiceflow · Make · Google Apps Script · Gemini · Telegram Bot API · Looker Studio · Python (test harness).
+
+## Live demo
+
+- 💬 **Chat demo:** https://afterhoursdental.carrd.co
+- 📞 **Phone demo:** call **+1 (727) 617-4500** and talk to the AI receptionist
+
+## Screenshots
+
+![Looker Studio dashboard](docs/images/dashboard.png)
+*Looker Studio dashboard built on the call log*
+
+![Telegram bot turning a notebook photo into sheet rows and an email draft](docs/images/notebook-bot.png)
+*Telegram bot: caller's notebook photo → Gemini → rows in the sheet + a ready email draft*
+
+![Google Sheet CRM](docs/images/sheet.png)
+*Google Sheet used as a lightweight CRM, private data removed*
+
+## About this repo
 
 This repo holds the Google Apps Script code that runs behind the scenes of the
 business. The scripts work with a Google Sheet of clinics and calls, and send
